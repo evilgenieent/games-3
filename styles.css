@@ -3,9 +3,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Monda', monospace;
-  letter-spacing: 20px;
   height: 760px;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -14,18 +14,19 @@ cartridge, name, blurb {
 }
 
 .main-title {
-  background: #b14;
+  background: #000;
   color: #fff;
-  text-align: center;
   font-family: 'Amatic SC', monospace;
   font-size: 60px;
-  line-height: 100px;
   height: 15%;
+  letter-spacing: 20px;
+  line-height: 100px;
+  text-align: center;
 }
 
 .cartridge-list {
   align-items: center;
-  background: #1b4;
+  background: #213;
   display: flex;
   flex-direction: row;
   height: 25%;
@@ -36,27 +37,70 @@ cartridge {
   background-image: url('assets/texture-underlay.png');
   background-size: contain;
   background-repeat: no-repeat;
-  display: none;
-  height: 23%;
+  filter: blur(2px);
+  height: 170px;
   position: absolute;
-  width: 22%;
+  width: 280px;
 }
 
 .centered {
-  display: block;
+  filter: blur(0px);
   left: 50%;
   transform: translateX(-50%);
 }
 
-cartridge > img {
-  display: none;
+.left {
+  left: 20%;
+  transform: translateX(-50%);
 }
 
-cartridge > section {
-  display: none;
+.right {
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.offleft {
+  left: -25%;
+  transform: translateX(-50%);
+}
+
+.offright {
+  left: 125%;
+  transform: translateX(-50%);
+}
+
+cartridge > img {
+  height: 122px;
+  left: 16px;
+  position: relative;
+  top: 32px;
+  width: 122px;
+}
+
+cartridge > section > name {
+  background: rgba(255, 255, 255, .1);
+  font-size: 14px;
+  left: 140px;
+  height: 26px;
+  border-bottom-left-radius: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 140px;
+}
+
+cartridge > section > blurb {
+  font-size: 11px;
+  height: 110px;
+  padding: 4px;
+  position: absolute;
+  left: 146px;
+  text-align: right;
+  top: 32px;
+  width: 110px;
 }
 
 .main-display-section {
-  background: #41b;
+  background: #000;
   height: 60%;
 }
