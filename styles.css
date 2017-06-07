@@ -37,9 +37,11 @@ cartridge {
   background-image: url('assets/texture-underlay.png');
   background-size: contain;
   background-repeat: no-repeat;
-  filter: blur(2px);
+  filter: blur(1px);
   height: 170px;
   position: absolute;
+  margin-top: 0px;
+  transition: margin-top .5s;
   width: 280px;
 }
 
@@ -79,7 +81,7 @@ cartridge > img {
 
 cartridge > section > name {
   background: rgba(255, 255, 255, .1);
-  font-size: 14px;
+  font-size: 15px;
   left: 140px;
   height: 26px;
   border-bottom-left-radius: 12px;
@@ -102,5 +104,26 @@ cartridge > section > blurb {
 
 .main-display-section {
   background: #000;
-  height: 60%;
+  display: flex;
+  height: 53%;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.main-display {
+  align-items: center;
+  background: #706075;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 70%;
+  z-index: 1;
+}
+
+.main-display > img {
+  height: 80%;
+  margin-left: 8%;
+  width: auto;
 }
