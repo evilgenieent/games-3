@@ -37,11 +37,11 @@ cartridge {
   background-image: url('assets/texture-underlay.png');
   background-size: contain;
   background-repeat: no-repeat;
-  filter: blur(1px);
+  filter: blur(2px);
   height: 170px;
   position: absolute;
   margin-top: 0px;
-  transition: transform .5s;
+  transition: transform .5s, left .5s, filter .5s;
   width: 280px;
 }
 
