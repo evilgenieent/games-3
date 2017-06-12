@@ -113,6 +113,7 @@ cartridge > section > blurb {
 .main-display {
   align-items: center;
   background: #706075;
+  background-image: url('assets/peeling-paint.jpg');
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   display: flex;
