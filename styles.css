@@ -26,7 +26,7 @@ cartridge, name, blurb, pushbutton {
 
 .cartridge-list {
   align-items: center;
-  background: #213;
+  background: #101;
   display: flex;
   flex-direction: row;
   height: 25%;
